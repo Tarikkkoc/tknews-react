@@ -1,23 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Layout from "./components/layout/Layout";
+
+import { Routes, Route, useLocation } from "react-router-dom";
+import News from "./pages/News";
+import Homepage from "./pages/Homepage";
+import Weather from "./pages/Weather";
+import NewsDetail from "./pages/NewsDetail";
+import Login from "./components/auth/Login";
+import Register from "./components/auth/Register";
+import Account from "./components/auth/Account";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="bg-gray-100 dark:bg-zinc-950">
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Homepage />} />
+          <Route path=":path">
+            <Route index element={<News />} />
+            <Route path=":id" element={<NewsDetail />} />
+          </Route>
+          <Route path="/hava" element={<Weather />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/account" element={<Account />} />
+        </Route>
+      </Routes>
     </div>
   );
 }
