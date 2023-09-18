@@ -14,7 +14,7 @@ The project is a news website with a news feed (RSS). In the project, news is pr
   <storng>yarn</storng> (or with yarn)
 </div> </br>
 <p>
-<a href="https://github.com/Tarikkkoc/tknews-nodejs/tree/main">
+<a href="https://github.com/Tarikkkoc/tknews-nodejs">
 3. Fork the backend by reading the README file.
 </a>
 </p>
