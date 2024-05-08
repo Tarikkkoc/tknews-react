@@ -1,6 +1,9 @@
 <h2>TKNEWS React</h2>
 <p>
 The project is a news website with a news feed (RSS). In the project, news is presented and published in real-time. You can view news in various categories. Additionally, user login and registration processes are available. The project includes responsive design and a dark mode feature.</p>
+<a href="https://baykar-landing-page.netlify.app/">
+<p>Click here to view the project on Netlify.</p>
+</a>
 <h2>Libs</h2>
 <ul>
   <li>React</li>
